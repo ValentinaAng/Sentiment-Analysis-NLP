@@ -1,5 +1,13 @@
 # Title: Twitter US Airlines Sentiment Analysis
 
+## Project Overview:
+
+This project aims to analyze the sentiment of tweets directed at various U.S. airlines. The dataset used in this analysis is the "Twitter US Airline Sentiment" dataset, which contains tweets classified as positive, neutral, or negative. The goal of this project is to build a machine learning model that can accurately predict the sentiment of tweets based on their text content.
+
+Initially, I will develop a model without using pre-trained models, employing `GloVe (Global Vectors for Word Representation) embeddings in combination with logistic regression`. This approach will provide a baseline for understanding how well traditional text vectorization techniques and a simple classifier perform on this task.
+
+In the second part of the project, I will leverage a pre-trained model, specifically `BERT (Bidirectional Encoder Representations from Transformers)`, to perform sentiment analysis. Using BERT, I aim to improve the model's performance by taking advantage of its deep contextual understanding of language, which is expected to capture nuanced sentiment information more effectively than traditional methods.
+
 ## About Dataset:
 
 The "Twitter US Airline Sentiment" dataset is publicly available on Kaggle and contains over 14,000 tweets about major U.S. airlines, labeled with sentiment categories. The dataset provides valuable insights into customer satisfaction and sentiment toward different airlines.
