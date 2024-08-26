@@ -6,7 +6,7 @@ This project aims to analyze the sentiment of tweets directed at various U.S. ai
 
 Initially, I will develop a model without using pre-trained models, employing `GloVe (Global Vectors for Word Representation) embeddings in combination with logistic regression`. This approach will provide a baseline for understanding how well traditional text vectorization techniques and a simple classifier perform on this task.
 
-In the second part of the project, I will leverage a pre-trained model, specifically `BERT (Bidirectional Encoder Representations from Transformers)`, to perform sentiment analysis. Using BERT, I aim to improve the model's performance by taking advantage of its deep contextual understanding of language, which is expected to capture nuanced sentiment information more effectively than traditional methods.
+In the second phase of the project, I plan to utilize a pre-trained model, specifically `BERT` (Bidirectional Encoder Representations from Transformers), for sentiment analysis. By leveraging BERT's deep contextual understanding of language, I aim to enhance the model's performance in capturing nuanced sentiment information more effectively than traditional methods. Given the small size of my dataset, I will use `DistilBERT`, a lighter and faster version of BERT, to optimize the analysis.
 
 ## About Dataset:
 
@@ -47,7 +47,7 @@ The "Twitter US Airline Sentiment" dataset is publicly available on Kaggle and c
 6. Conclusion
 
 
-## Results:
+## Results without Pre-trained model:
 
 | Class | Precision | Recall | F1-Score | Support |
 |-------|-----------|--------|----------|---------|
@@ -58,9 +58,14 @@ The "Twitter US Airline Sentiment" dataset is publicly available on Kaggle and c
 | **Macro Avg** | 0.64 | 0.70   | 0.66     | 2891    |
 | **Weighted Avg** | 0.75 | 0.70   | 0.71     | 2891    |
 
+## Results wuth Pre-trained model:
+
+`Accuracy`: 0.84
+I only evaluated accuracy, which has improved compared to before, now reaching 0.70.
+
 ## Conclusion:
 
-#### Predictions:
+#### Predictions without Pre-trained model:
 
 1. **For the input `['i hate you']`**:
    - **Predicted sentiment**: Negative
@@ -75,6 +80,13 @@ The "Twitter US Airline Sentiment" dataset is publicly available on Kaggle and c
      - **Class 0 (negative)**: 1.6%
      - **Class 1 (positive)**: 97.1%
      - **Class 2 (neutral)**: 1.2%
+    
+#### Predictions with Pre-trained model:
+
+Sentence: It was an awfull trip, the flight was very late and it was so full and smelly
+Prediction: 0, is negative
+Sentence: This is going to be nice trip, can't wait.
+Prediction: 1, is positive
 
 These predictions align with the expected sentiments of the inputs, demonstrating that the model can provide meaningful predictions for new data.
 
