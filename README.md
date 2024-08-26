@@ -41,7 +41,7 @@ The "Twitter US Airline Sentiment" dataset is publicly available on Kaggle and c
 ## Table of Content:
 1. Data Analysis
 2. Data Preprocessing
-3. Pretrained-Glove Embeddings
+3. Pretrained-Glove Embeddings / Loading Pre-Trained model
 4. Model Training and Evaluating
 5. Prediction
 6. Conclusion
