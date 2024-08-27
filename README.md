@@ -83,10 +83,13 @@ I only evaluated accuracy, which has improved compared to before, now reaching 0
     
 #### Predictions with Pre-trained model:
 
-Sentence: It was an awfull trip, the flight was very late and it was so full and smelly
-Prediction: 0, is negative
-Sentence: This is going to be nice trip, can't wait.
-Prediction: 1, is positive
+1. **Sentence: It was an awfull trip, the flight was very late and it was so full and smelly.**
+
+`Prediction: 0, is negative`
+
+2. **Sentence: This is going to be nice trip, can't wait.**
+
+`Prediction: 1, is positive`
 
 These predictions align with the expected sentiments of the inputs, demonstrating that the model can provide meaningful predictions for new data.
 
