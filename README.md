@@ -61,7 +61,7 @@ The "Twitter US Airline Sentiment" dataset is publicly available on Kaggle and c
 ## Results with Pre-trained model:
 
 `Accuracy`: 0.84
-I only evaluated accuracy, which has improved compared to before, now reaching 0.70.
+I only evaluated accuracy, which has improved compared to before.
 
 ## Conclusion:
 
